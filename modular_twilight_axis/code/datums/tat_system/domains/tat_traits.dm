@@ -479,8 +479,8 @@
 
 /datum/tat_traits/proc/get_divine_passive_gain_for_tier(cleric_tier)
 	if(cleric_tier >= CLERIC_T1)
-		return CLERIC_REGEN_MINOR
-	return CLERIC_REGEN_WITCH
+		return CLERIC_REGEN_WITCH
+	return CLERIC_REGEN_MINOR
 
 /datum/tat_traits/proc/get_divine_devotion_limit_for_tier(cleric_tier)
 	switch(cleric_tier)
