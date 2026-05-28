@@ -7801,6 +7801,10 @@
 	},
 /turf/open/floor/rogue/wood/nosmooth,
 /area/rogue/outdoors/desertdeep/above)
+"cTH" = (
+/obj/effect/landmark/quest_spawner/easy,
+/turf/open/floor/rogue/sandbrick,
+/area/rogue/under/underdarker/undercity)
 "cTK" = (
 /obj/machinery/light/rogue/firebowl/standing/green,
 /obj/structure/fluff/statue/gargoyle/moss/candles,
@@ -17318,6 +17322,10 @@
 "gAq" = (
 /turf/open/water/swamp,
 /area/rogue/under/cave/dungeon1)
+"gAt" = (
+/obj/effect/landmark/quest_spawner/hard,
+/turf/open/floor/rogue/sandbrick,
+/area/rogue/under/underdarker/undercity)
 "gAx" = (
 /obj/structure/fluff/statue/astrata/gold,
 /obj/structure/fluff/railing/border{
@@ -24310,6 +24318,7 @@
 	dir = 4
 	},
 /obj/structure/fluff/railing/border,
+/obj/structure/roguemachine/chimeric_slab,
 /turf/open/floor/rogue/tile/harem1,
 /area/rogue/indoors/town/church)
 "jpL" = (
@@ -25568,6 +25577,12 @@
 	icon = 'modular_deserttown/icons/alt/roguefloor.dmi'
 	},
 /area/rogue/under/cave)
+"jMI" = (
+/obj/effect/landmark/quest_spawner/easy,
+/turf/open/floor/rogue/tile/brownbrick{
+	icon = 'modular_deserttown/icons/alt/roguefloor.dmi'
+	},
+/area/rogue/under/underdarker/undercity)
 "jMJ" = (
 /turf/closed/wall/mineral/rogue/decostone/mossy/long{
 	dir = 1
@@ -31587,6 +31602,10 @@
 /obj/machinery/light/rogue/candle/r,
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town/manor/desert)
+"mgF" = (
+/obj/effect/landmark/quest_spawner/medium,
+/turf/open/floor/rogue/sandbrick,
+/area/rogue/under/underdarker/undercity)
 "mgK" = (
 /obj/structure/chair/wood/zybantine,
 /obj/machinery/light/rogue/candle/blue,
@@ -39103,6 +39122,10 @@
 	},
 /turf/open/floor/rogue/tile/bath,
 /area/rogue/indoors/town/desert/manor)
+"oVd" = (
+/obj/effect/landmark/quest_spawner/easy,
+/turf/open/floor/rogue/lightpath,
+/area/rogue/under/underdarker/undercity)
 "oVg" = (
 /obj/structure/closet/crate/roguecloset/inn/south,
 /obj/item/clothing/suit/roguetown/shirt/dress,
@@ -134120,7 +134143,7 @@ vUu
 fWZ
 aRq
 vgi
-exU
+cTH
 exU
 vgi
 wel
@@ -147514,7 +147537,7 @@ mwM
 wel
 vgi
 exU
-exU
+mgF
 vgi
 wel
 wsz
@@ -154717,7 +154740,7 @@ exU
 vgi
 wel
 wsz
-wsz
+jMI
 kAw
 iMJ
 wsz
@@ -158746,7 +158769,7 @@ exU
 exU
 exU
 exU
-exU
+gAt
 exU
 exU
 exU
@@ -163460,7 +163483,7 @@ exU
 vgi
 vgi
 vgi
-vgi
+oVd
 vgi
 wvK
 exU
