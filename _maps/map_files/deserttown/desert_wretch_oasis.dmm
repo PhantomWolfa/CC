@@ -1219,6 +1219,10 @@
 /obj/item/rogueweapon/hammer/iron,
 /turf/open/floor/rogue/sandbrick,
 /area/rogue/under/cave/inhumen)
+"ib" = (
+/obj/structure/far_travel,
+/turf/open/floor/rogue/sandbrick,
+/area/rogue/outdoors/desertdeep/wretch_lair)
 "ic" = (
 /obj/structure/ritualcircle/dendor,
 /turf/open/floor/rogue/sandbrick,
@@ -2427,6 +2431,10 @@
 /obj/machinery/light/rogue/candle/weak,
 /turf/open/floor/rogue/hexstone,
 /area/rogue/indoors/vampire_manor/desert)
+"pt" = (
+/obj/structure/flagpole,
+/turf/open/floor/rogue/dunes,
+/area/rogue/outdoors/desertdeep/wretch_lair)
 "pu" = (
 /obj/machinery/light/rogue/torchholder{
 	dir = 1
@@ -3731,6 +3739,10 @@
 	},
 /turf/open/floor/rogue/darkpath,
 /area/rogue/outdoors/banditcamp/desert)
+"xg" = (
+/obj/machinery/light/rogue/firebowl,
+/turf/open/floor/rogue/sandbrick,
+/area/rogue/under/cave/inhumen)
 "xi" = (
 /obj/machinery/light/rogue/candle,
 /turf/open/floor/rogue/darkpath,
@@ -5538,8 +5550,7 @@
 /turf/open/floor/rogue/blocks/stonered/tiny,
 /area/rogue/indoors/vampire_manor/desert)
 "Jg" = (
-/obj/effect/decal/cleanable/debris/woody,
-/obj/machinery/light/rogue/firebowl,
+/obj/structure/far_travel,
 /turf/open/floor/rogue/naturalstone/sandstone,
 /area/rogue/under/cave/inhumen)
 "Jh" = (
@@ -18273,11 +18284,11 @@ YI
 nk
 hh
 hh
-Kw
+LE
 Kw
 Kw
 oA
-Jg
+JT
 hh
 hh
 ge
@@ -18402,8 +18413,8 @@ YI
 (79,1,1) = {"
 nk
 hh
-hh
-hh
+Jg
+Kw
 lJ
 JT
 JT
@@ -18532,14 +18543,14 @@ YI
 (80,1,1) = {"
 nk
 hh
-hh
-hh
-hh
-hh
+Jg
+Kw
+Kw
+Kw
 Kw
 Md
 VC
-RS
+xg
 ge
 RS
 RS
@@ -18662,8 +18673,8 @@ YI
 (81,1,1) = {"
 nk
 hh
-hh
-hh
+Jg
+Kw
 hh
 ge
 ge
@@ -34048,7 +34059,7 @@ ww
 lG
 lG
 kj
-uZ
+dT
 dT
 dT
 dT
@@ -34178,9 +34189,9 @@ bl
 bl
 bl
 Xt
-eM
 dT
-dT
+ib
+ib
 dT
 dT
 nk
@@ -34308,9 +34319,9 @@ eM
 eM
 eM
 eM
-eM
 LT
-dT
+PX
+ss
 dT
 dT
 nk
@@ -34439,7 +34450,7 @@ Ds
 Ds
 Ds
 Ds
-Ds
+ss
 ss
 cC
 dT
@@ -35472,7 +35483,7 @@ nf
 aG
 ss
 ss
-eM
+pt
 ge
 Rf
 cX

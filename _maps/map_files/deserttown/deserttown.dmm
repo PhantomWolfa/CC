@@ -2214,6 +2214,12 @@
 	icon = 'modular_deserttown/icons/alt/roguefloor.dmi'
 	},
 /area/rogue/indoors/town/desert/warden)
+"aRB" = (
+/obj/structure/roguemachine/scomm{
+	pixel_y = -32
+	},
+/turf/open/floor/rogue/cobblerock,
+/area/rogue/outdoors/town/desert)
 "aRC" = (
 /obj/structure/closet/crate/chest/old_crate{
 	pixel_y = 9;
@@ -13067,6 +13073,17 @@
 /obj/item/reagent_containers/food/snacks/crow,
 /turf/open/floor/rogue/sandbrick,
 /area/rogue/outdoors/town/roofs/desert)
+"eMk" = (
+/obj/structure/bars{
+	icon_state = "barsbent";
+	layer = 2.81;
+	name = "Desk and Deliveries"
+	},
+/obj/structure/table/wood,
+/turf/open/floor/rogue/concrete{
+	icon = 'modular_deserttown/icons/alt/roguefloor.dmi'
+	},
+/area/rogue/indoors/town/desert/manor)
 "eMm" = (
 /obj/structure/table/wood{
 	dir = 5;
@@ -46639,12 +46656,13 @@
 /obj/structure/table/wood,
 /obj/structure/bars{
 	icon_state = "barsbent";
-	layer = 2.81
+	layer = 2.81;
+	name = "Desk and Deliveries"
 	},
 /turf/open/floor/rogue/concrete{
 	icon = 'modular_deserttown/icons/alt/roguefloor.dmi'
 	},
-/area/rogue/indoors/town/garrison/desert)
+/area/rogue/indoors/town/desert/manor)
 "rNp" = (
 /obj/structure/fluff/walldeco/stone/bronze{
 	color = "#f5cc8e"
@@ -379400,7 +379418,7 @@ ugq
 ugq
 kpQ
 yhe
-jQz
+aRB
 xPK
 tDJ
 dAX
@@ -400002,8 +400020,8 @@ whi
 vwp
 vfO
 uIK
-uqu
-uqu
+rNd
+eMk
 rNd
 uqu
 rgN
