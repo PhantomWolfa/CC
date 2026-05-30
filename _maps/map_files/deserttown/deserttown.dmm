@@ -55468,7 +55468,9 @@
 	lockid = "farm";
 	name = "Secure Animal Barn"
 	},
-/turf/closed/wall/mineral/rogue/sandbrick,
+/turf/open/floor/rogue/tile/brownbrick{
+	icon = 'modular_deserttown/icons/alt/roguefloor.dmi'
+	},
 /area/rogue/indoors/town/desert)
 "uWK" = (
 /obj/structure/bed/rogue/inn/wool,
