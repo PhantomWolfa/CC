@@ -2487,6 +2487,12 @@
 /obj/item/reagent_containers/glass/cup/skull,
 /turf/open/floor/carpet/purple,
 /area/rogue/indoors/banditcamp/desert)
+"pP" = (
+/obj/structure/stairs/stone{
+	dir = 4
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/desertdeep/wretch_lair)
 "pS" = (
 /turf/open/floor/rogue/naturalstone/sandstone,
 /area/rogue/outdoors/banditcamp/desert)
@@ -5178,6 +5184,12 @@
 /obj/structure/fermentation_keg/sandpot,
 /turf/open/floor/rogue/blocks/stonered/tiny,
 /area/rogue/indoors/vampire_manor/desert)
+"GT" = (
+/obj/structure/stairs/stone{
+	dir = 8
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/desertdeep/wretch_lair)
 "GY" = (
 /turf/open/water/river/flow/north,
 /area/rogue/indoors/vampire_manor/desert)
@@ -17975,7 +17987,7 @@ Sj
 hO
 hO
 hO
-Po
+FE
 Po
 Po
 hO
@@ -18495,7 +18507,7 @@ Ln
 hO
 hO
 hO
-Po
+FE
 Po
 Po
 hO
@@ -51447,8 +51459,8 @@ PY
 PY
 PY
 PY
-hz
-hz
+GT
+GT
 PY
 PY
 PY
@@ -51471,8 +51483,8 @@ PY
 PY
 PY
 PY
-hz
-hz
+GT
+GT
 PY
 PY
 PY
@@ -53260,7 +53272,7 @@ Nk
 Nk
 CR
 CR
-Nk
+Xg
 Nk
 ge
 PY
@@ -53390,7 +53402,7 @@ pG
 Nk
 CR
 CR
-Nk
+Xg
 fn
 ge
 PY
@@ -55087,8 +55099,8 @@ PY
 PY
 PY
 PY
-hz
-hz
+pP
+pP
 PY
 PY
 PY
@@ -55110,8 +55122,8 @@ PY
 PY
 PY
 PY
-hz
-hz
+pP
+pP
 PY
 PY
 PY
