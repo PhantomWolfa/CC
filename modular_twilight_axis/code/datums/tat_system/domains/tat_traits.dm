@@ -378,7 +378,9 @@
 		TRAIT_REVERSE_GUIDANCE = list(TRAIT_LESSER_REVERSE_GUIDANCE),
 		TRAIT_NOPAINSTUN = list(TAT_TRAIT_MAGE_INITIATE),
 		TRAIT_HARDDISMEMBER = list(TRAIT_EASYDISMEMBER),
-		TRAIT_DEFILED_NOBLE = list(TRAIT_NOBLE)
+		TRAIT_DEFILED_NOBLE = list(TRAIT_NOBLE),
+		TRAIT_MANORHOLDERMEDIUM = list(TRAIT_MANORHOLDERSMALL),
+		TRAIT_MANORHOLDERSMALL = list(TRAIT_MANORHOLDERMEDIUM)
 	)
 	return GLOB.tat_trait_conflict_map
 
@@ -402,6 +404,8 @@
 		TAT_TRAIT_SAVAGE_RAGE = list("all" = list(TAT_TRAIT_SAVAGE_SKIN), "message" = "\"[get_trait_display_name(TAT_TRAIT_SAVAGE_RAGE)]\" requires \"[get_trait_display_name(TAT_TRAIT_SAVAGE_SKIN)]\"."),
 		TAT_TRAIT_BERSERKER_RAGE = list("all" = list(TAT_TRAIT_SAVAGE_SKIN, TAT_TRAIT_HERETIC), "message" = "\"[get_trait_display_name(TAT_TRAIT_BERSERKER_RAGE)]\" requires savage skin and heretic."),
 		TAT_TRAIT_LOOTRAT_2 = list("all" = list(TAT_TRAIT_LOOTRAT, TAT_TRAIT_TRADER_LICENSE), "message" = "\"[get_trait_display_name(TAT_TRAIT_LOOTRAT_2)]\" requires merchant writ and lootrat."),
+		TRAIT_MANORHOLDERSMALL = list("all" = list(TRAIT_NOBLE, TAT_TRAIT_RESIDENT), "message" = "\"[get_trait_display_name(TRAIT_MANORHOLDERSMALL)]\" requires noble and resident."),
+		TRAIT_MANORHOLDERMEDIUM = list("all" = list(TRAIT_NOBLE, TAT_TRAIT_RESIDENT), "message" = "\"[get_trait_display_name(TRAIT_MANORHOLDERMEDIUM)]\" requires noble and resident."),
 	)
 	return GLOB.tat_trait_requirement_map
 
