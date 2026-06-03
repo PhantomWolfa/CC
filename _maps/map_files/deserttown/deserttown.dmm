@@ -45064,6 +45064,12 @@
 	},
 /turf/open/transparent/openspace,
 /area/rogue/outdoors/town/desert)
+"rdJ" = (
+/obj/machinery/light/roguestreet/orange/walllamp{
+	dir = 4
+	},
+/turf/open/floor/rogue/wood,
+/area/rogue/indoors/town/dwarfin/desert)
 "rdU" = (
 /obj/structure/fluff/railing/border{
 	dir = 4
@@ -58921,6 +58927,7 @@
 /obj/item/reagent_containers/food/snacks/grown/apple,
 /obj/item/reagent_containers/food/snacks/grown/apple,
 /obj/machinery/light/rogue/candle/weak,
+/obj/item/reagent_containers/food/snacks/butter,
 /turf/open/floor/rogue/tile/brownbrick{
 	icon = 'modular_deserttown/icons/alt/roguefloor.dmi'
 	},
@@ -58942,6 +58949,9 @@
 /obj/structure/fluff/walldeco/painting/seraphina{
 	pixel_y = 32
 	},
+/obj/item/roguekey/inquisitionmanor,
+/obj/item/roguekey/inquisitionmanor,
+/obj/item/roguekey/inquisitionmanor,
 /turf/open/floor/rogue/herringbone,
 /area/rogue/indoors/inq/office)
 "wkr" = (
@@ -60661,6 +60671,7 @@
 "wTb" = (
 /obj/structure/closet/crate/chest,
 /obj/item/rope,
+/obj/item/roguekey/veteran,
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town/desert)
 "wTc" = (
@@ -60826,6 +60837,9 @@
 /area/rogue/indoors/town/desert/warden)
 "wWG" = (
 /obj/machinery/gear_painter,
+/obj/machinery/light/roguestreet/orange/walllamp{
+	dir = 1
+	},
 /turf/open/floor/rogue/woodturned,
 /area/rogue/indoors/town/dwarfin/desert)
 "wWQ" = (
@@ -274440,7 +274454,7 @@ und
 und
 und
 kVm
-dNM
+kVm
 wRw
 und
 und
@@ -399879,7 +399893,7 @@ uKs
 qbo
 fpi
 hio
-wyj
+rdJ
 bmu
 bmu
 cBK
