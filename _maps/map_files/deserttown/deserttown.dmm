@@ -13501,6 +13501,12 @@
 /obj/structure/bars/passage/shutter{
 	redstone_id = "shutter_merchant2"
 	},
+/obj/structure/fluff/walldeco/church/line{
+	dir = 8
+	},
+/obj/structure/fluff/walldeco/church/line{
+	dir = 4
+	},
 /turf/open/floor/rogue/tile/brownbrick{
 	icon = 'modular_deserttown/icons/alt/roguefloor.dmi'
 	},
@@ -16881,10 +16887,6 @@
 /obj/item/cooking/pan,
 /obj/item/reagent_containers/glass/bucket/pot,
 /obj/item/reagent_containers/glass/bucket/pot,
-/obj/machinery/light/roguestreet/orange/walllamp{
-	dir = 8;
-	pixel_y = 18
-	},
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/town/shop/desert)
 "gof" = (
@@ -25408,14 +25410,6 @@
 	icon = 'modular_deserttown/icons/alt/roguefloor.dmi'
 	},
 /area/rogue/indoors/town/desert)
-"jGd" = (
-/obj/effect/decal/cobbleedge{
-	dir = 8;
-	icon_state = "borderfall";
-	pixel_x = -8
-	},
-/turf/open/floor/rogue/tile/harem1,
-/area/rogue/indoors/town/shop/desert)
 "jGh" = (
 /obj/machinery/light/rogue/candle,
 /turf/open/floor/rogue/wood/nosmooth,
@@ -45182,10 +45176,17 @@
 /turf/open/floor/rogue/carpet/lord/left,
 /area/rogue/indoors/town/manor/desert)
 "rdW" = (
-/obj/structure/fluff/canopy/side,
-/obj/item/storage/belt/rogue/leather/shalal,
-/turf/open/floor/rogue/darkpath,
-/area/rogue/outdoors/town/desert)
+/obj/structure/bars/passage/shutter{
+	redstone_id = "shutter_merchant2"
+	},
+/obj/structure/fluff/walldeco/church/line,
+/obj/structure/fluff/walldeco/church/line{
+	dir = 1
+	},
+/turf/open/floor/rogue/tile/brownbrick{
+	icon = 'modular_deserttown/icons/alt/roguefloor.dmi'
+	},
+/area/rogue/indoors/town/shop/desert)
 "reh" = (
 /obj/structure/rack/rogue{
 	pixel_y = 12
@@ -57728,17 +57729,6 @@
 /obj/item/cushion/desert2,
 /turf/open/floor/carpet/royalblack,
 /area/rogue/outdoors/town/roofs/desert)
-"vKE" = (
-/obj/effect/decal/cobbleedge{
-	dir = 8;
-	icon_state = "borderfall";
-	pixel_x = -8
-	},
-/obj/machinery/light/roguestreet/orange/walllamp{
-	dir = 4
-	},
-/turf/open/floor/rogue/tile/harem1,
-/area/rogue/indoors/town/shop/desert)
 "vKI" = (
 /obj/effect/decal/cobbleedge{
 	icon_state = "borderfall";
@@ -63005,11 +62995,6 @@
 /obj/structure/fluff/walldeco/church/line{
 	dir = 1;
 	layer = 2
-	},
-/obj/effect/decal/cobbleedge{
-	dir = 8;
-	icon_state = "borderfall";
-	pixel_x = -8
 	},
 /obj/machinery/light/rogue/candle/blue/l,
 /turf/open/floor/rogue/tile/harem1,
@@ -390485,8 +390470,8 @@ iiI
 iiI
 iiI
 iiI
-iiI
-iiI
+eTT
+eTT
 iiI
 epB
 bra
@@ -390796,10 +390781,10 @@ iiI
 tne
 nVt
 xHZ
-jGd
-jGd
-vKE
-hjE
+atu
+atu
+atu
+rdW
 eok
 eok
 iIz
@@ -391110,9 +391095,9 @@ oWW
 oiv
 fWI
 oiv
-atu
+bET
 iiI
-eok
+xAP
 eok
 heV
 uRO
@@ -391423,7 +391408,7 @@ fWI
 hTc
 fWI
 atu
-eTT
+hjE
 eok
 lUU
 rJC
@@ -391734,7 +391719,7 @@ oWW
 oiv
 fWI
 oiv
-atu
+bET
 iiI
 xAP
 eok
@@ -392047,7 +392032,7 @@ cPe
 atu
 atu
 atu
-eTT
+rdW
 eok
 eok
 eok
@@ -396725,8 +396710,8 @@ iiI
 iiI
 iiI
 iiI
-iiI
-iiI
+jFD
+jFD
 iiI
 qyC
 boW
@@ -396739,8 +396724,8 @@ boW
 kIY
 atX
 atX
-atX
-atX
+uTM
+uTM
 atX
 atX
 atX
@@ -397042,7 +397027,7 @@ bep
 pvk
 nba
 nba
-rdW
+nba
 fdt
 bep
 nba
@@ -512183,7 +512168,7 @@ ury
 hWm
 qvB
 qvB
-wTh
+tNm
 wCA
 dHf
 jNu
