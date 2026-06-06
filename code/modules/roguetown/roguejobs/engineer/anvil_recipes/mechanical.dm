@@ -306,7 +306,7 @@
 /datum/anvil_recipe/engineering/leadbullets
 	name = "Firearm Bullets (x10)"
 	req_bar = /obj/item/ingot/iron
-	created_item = /obj/item/ammo_casing/caseless/rogue/bullet
+	created_item = /obj/item/ammo_casing/caseless/rogue/bullet/blackpowder //Caustic Edit - Changing the output to be our new refactored (basic) bullets
 	createditem_num = 10
 	craftdiff = 2
 

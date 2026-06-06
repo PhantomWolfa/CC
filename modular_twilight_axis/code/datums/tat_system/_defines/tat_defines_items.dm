@@ -42,7 +42,7 @@ GLOBAL_LIST_INIT(tat_donation_access_all_ckeys, TAT_DONATION_ACCESS_ALL_CKEYS)
 	/obj/item/tat_trader_lootbox/clothes = TAT_ITEM_ENTRY("Sewing Trader Cache", 5, "misc", TAT_UNLOCK_TYPE_TRAIT, "tat_trader_license", "trader cache"), \
 	/obj/item/tat_trader_lootbox/potion = TAT_ITEM_ENTRY("Alchemical Trader Cache", 4, "misc", TAT_UNLOCK_TYPE_TRAIT, "tat_trader_license", "trader cache"), \
 	/obj/item/powderflask = TAT_ITEM_ENTRY("Blackpowder Flask", 1, "weapon", "weapon_supply", TAT_SUPPLY_FIREARMS, "blackpowder"), \
-	/obj/item/quiver/bulletpouch/iron = TAT_ITEM_ENTRY("20 Lead Bullets", 2, "weapon", "weapon_supply", TAT_SUPPLY_FIREARMS, "blackpowder"), \
+	/obj/item/quiver/bulletpouch/iron = TAT_ITEM_ENTRY("20 Iron Bullets", 2, "weapon", "weapon_supply", TAT_SUPPLY_FIREARMS, "blackpowder"), \
 	/obj/item/clothing/neck/roguetown/psicross/silver = TAT_ITEM_ENTRY("Silver Psycross", 1, "misc", "weapon_supply", TAT_SUPPLY_SILVER, "cross"),\
 	/obj/item/clothing/neck/roguetown/psicross/silver/astrata = TAT_ITEM_ENTRY("Silver Astrata Cross", 1, "misc", "weapon_supply", TAT_SUPPLY_SILVER, "cross"),\
 	/obj/item/clothing/neck/roguetown/psicross/silver/undivided = TAT_ITEM_ENTRY("Silver Tennite cross", 1, "misc", "weapon_supply", TAT_SUPPLY_SILVER, "cross"),\
