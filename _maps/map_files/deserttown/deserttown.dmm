@@ -10882,10 +10882,6 @@
 /obj/effect/spawner/lootdrop/roguegem/random,
 /turf/open/floor/rogue/grasscold,
 /area/rogue/under/underdarker)
-"dTX" = (
-/obj/item/reagent_containers/glass/bucket,
-/turf/open/floor/rogue/dirt/road/desert,
-/area/rogue/under/town/basement/desert/town)
 "dUc" = (
 /obj/effect/landmark/quest_spawner/medium,
 /turf/open/floor/rogue/dunes,
@@ -28223,6 +28219,12 @@
 "kHE" = (
 /turf/closed/wall/mineral/rogue/sandbrick,
 /area/rogue/indoors/inq/office)
+"kHG" = (
+/obj/structure/stairs/desert{
+	dir = 8
+	},
+/turf/open/floor/rogue/naturalstone/sandstone,
+/area/rogue/outdoors/desertdeep/above)
 "kHL" = (
 /obj/effect/decal/mossy{
 	dir = 8
@@ -29712,10 +29714,6 @@
 	},
 /turf/open/floor/rogue/darkpath,
 /area/rogue/indoors/town/garrison/desert)
-"llB" = (
-/obj/structure/fermentation_keg/sandpot/beer,
-/turf/open/floor/rogue/tile/harem,
-/area/rogue/indoors/town/tavern/desert)
 "llN" = (
 /obj/structure/rack/rogue,
 /obj/item/clothing/suit/roguetown/armor/chainmail/iron,
@@ -32970,6 +32968,10 @@
 "mzf" = (
 /turf/open/floor/rogue/citybrick/citybrick4,
 /area/rogue/indoors/town/desert/warden)
+"mzD" = (
+/obj/item/reagent_containers/glass/bucket,
+/turf/open/floor/rogue/dirt/road/desert,
+/area/rogue/under/town/basement/desert/town)
 "mzQ" = (
 /obj/machinery/light/rogue/torchholder/r,
 /turf/open/floor/rogue/twig,
@@ -54243,6 +54245,12 @@
 /obj/structure/fermentation_keg/sandpot/water,
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town/desert)
+"usF" = (
+/obj/structure/stairs/desert{
+	dir = 8
+	},
+/turf/open/floor/rogue/dunes,
+/area/rogue/outdoors/desertdeep)
 "usP" = (
 /obj/structure/mineral_door/wood/donjon/stone{
 	locked = 1;
@@ -62069,6 +62077,10 @@
 	icon = 'modular_deserttown/icons/alt/roguefloor.dmi'
 	},
 /area/rogue/indoors/town/steward)
+"xiy" = (
+/obj/structure/fermentation_keg/sandpot/beer,
+/turf/open/floor/rogue/tile/harem,
+/area/rogue/indoors/town/tavern/desert)
 "xiB" = (
 /obj/machinery/light/rogue/candle/weak/r,
 /turf/open/floor/carpet/royalblack,
@@ -256119,7 +256131,7 @@ sEF
 igw
 igw
 igw
-igw
+kap
 yki
 und
 und
@@ -285946,7 +285958,7 @@ gTm
 jYh
 kUs
 joU
-dTX
+mzD
 kUK
 jYh
 iCK
@@ -306423,9 +306435,9 @@ mVA
 mVA
 ydN
 ydN
-ydN
-ydN
-ydN
+vpW
+vpW
+vpW
 ydN
 ydN
 ydN
@@ -306735,9 +306747,9 @@ wcj
 mVA
 ydN
 ydN
-ydN
-ydN
-ydN
+vpW
+usF
+vpW
 ydN
 ydN
 ydN
@@ -307047,9 +307059,9 @@ mVA
 mVA
 ydN
 ydN
-ydN
-ydN
-ydN
+vpW
+mVA
+vpW
 ydN
 ydN
 ydN
@@ -307359,9 +307371,9 @@ mVA
 mVA
 mVA
 ydN
-ydN
-ydN
-ydN
+vpW
+mVA
+vpW
 ydN
 ydN
 ydN
@@ -404819,7 +404831,7 @@ ttU
 pUr
 bEN
 gNA
-llB
+xiy
 jsO
 mLb
 vEK
@@ -424982,10 +424994,10 @@ xRy
 xRy
 xRy
 xRy
-pPs
 kSl
 kSl
 kSl
+kHG
 kSl
 kSl
 kSl
@@ -425294,11 +425306,11 @@ xRy
 xRy
 xRy
 xRy
-pPs
-pPs
-pPs
-pPs
-pPs
+kSl
+kSl
+kSl
+xRy
+kSl
 kSl
 kSl
 bBC
@@ -425606,11 +425618,11 @@ xRy
 xRy
 xRy
 xRy
-pPs
-pPs
-pPs
-pPs
-pPs
+kSl
+kSl
+kSl
+kSl
+kSl
 kSl
 kSl
 kSl
@@ -425919,12 +425931,12 @@ xRy
 xRy
 xRy
 xRy
-pPs
-pPs
-pPs
-pPs
-pPs
-pPs
+kSl
+kSl
+kSl
+kSl
+kSl
+kSl
 kSl
 bBC
 bBC
@@ -426235,8 +426247,8 @@ xRy
 xRy
 xRy
 xRy
-pPs
-pPs
+kSl
+kSl
 kSl
 kSl
 kSl
