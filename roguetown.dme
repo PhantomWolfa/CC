@@ -216,6 +216,11 @@
 #include "code\__DEFINES\mobs\simplemob_attack_speed.dm"
 #include "code\__DEFINES\mobs\simplemob_health.dm"
 #include "code\__DEFINES\mobs\simplemob_movement_speed.dm"
+#include "code\modules\spells\spell_types\wizard\augmentation\readomen.dm"
+#include "code\modules\spells\spell_types\wizard\conjure\conjure_instrument.dm"
+#include "code\modules\spells\spell_types\wizard\conjure\conjure_spectacles.dm"
+#include "code\modules\spells\spell_types\wizard\conjure\transcribe.dm"
+#include "code\modules\spells\spell_types\wizard\cryomancy\fridigitation.dm"
 
 //Caustic Modular Defines
 #include "modular_causticcove\code\__DEFINES\appearance_changer.dm"
