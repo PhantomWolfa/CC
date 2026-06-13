@@ -499,6 +499,17 @@
 	first_time_text = "The WasteMire"
 	deathsight_message = "a filthy swamp, far beneath the dunes"
 
+// CC - Dungeon Additions
+/area/rogue/under/cave/desertminomaze
+	name = "Labyrinth of Penance"
+	droning_sound = 'sound/music/area/prospector.ogg'
+	droning_sound_dusk = null 
+	droning_sound_night = null 
+	first_time_text = "The Labyrinth of Penance"
+	ambush_times = null 
+	ambush_mobs = null 
+	deathsight_message = "a maze of the unredeemed"
+
 // desert_wretch_oasis Special Areas. Bandit zone uses areas earlier in code
 /area/rogue/indoors/vampire_manor/desert 
 	name = "Vampire Hideaway"
