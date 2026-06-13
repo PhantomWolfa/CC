@@ -18,6 +18,7 @@
 		/datum/sprite_accessory/tail_feature/taur/caustic/bunny,
 		/datum/sprite_accessory/tail_feature/taur/caustic/deerbelly,
 	)
+	var/can_wag = FALSE
 
 /obj/item/organ/tail_feature/taur_markings
 	name = "taur marking"
@@ -29,6 +30,14 @@
 
 /datum/sprite_accessory/tail_feature/taur/adjust_appearance_list(list/appearance_list, obj/item/organ/organ, obj/item/bodypart/bodypart, mob/living/carbon/owner)
     generic_gender_feature_adjust(appearance_list, organ, bodypart, owner, OFFSET_TAUR, OFFSET_TAUR_F)
+
+/datum/sprite_accessory/tail_feature/taur/get_icon_state(obj/item/organ/organ, obj/item/bodypart/bodypart, mob/living/carbon/owner)
+	if(!owner || !can_wag)
+		return ..()
+	var/obj/item/bodypart/taur/taur_half = owner.get_bodypart(BODY_ZONE_TAUR)
+	if(!taur_half || !taur_half.wagging)
+		return ..()
+	return "[icon_state]_wagging"
 
 /datum/sprite_accessory/tail_feature/taur/lamia
 	name = "Lamia Taur Markings"	
@@ -128,3 +137,24 @@
 	name = "Big Legs, Stanced Marking"
 	icon = 'modular_causticcove/icons/mob/taurs/biglegsstanced_markings.dmi'
 	icon_state = "biglegs_stanced"
+
+/datum/sprite_accessory/tail_feature/taur/lupine_venard_1
+	name = "Lupine Vernard Body Markings"
+	icon = 'modular_causticcove/icons/mob/taurs/lupine_venard_markings.dmi'
+	icon_state = "chemtaur_markings_1"
+	color_key_name = "Body Markings"
+	can_wag = TRUE
+
+/datum/sprite_accessory/tail_feature/taur/lupine_venard_2
+	name = "Lupine Vernard Upper Highlight and Socks"
+	icon = 'modular_causticcove/icons/mob/taurs/lupine_venard_markings.dmi'
+	icon_state = "chemtaur_markings_2"
+	color_key_name = "Upper Highlights and Socks"
+	can_wag = TRUE
+
+/datum/sprite_accessory/tail_feature/taur/lupine_venard_3
+	name = "Lupine Vernard Other Highlights"
+	icon = 'modular_causticcove/icons/mob/taurs/lupine_venard_markings.dmi'
+	icon_state = "chemtaur_markings_3"
+	color_key_name = "Other Highlights"
+	can_wag = TRUE
