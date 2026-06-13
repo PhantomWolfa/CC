@@ -13660,6 +13660,14 @@
 /obj/item/roguecoin/gold/pile,
 /turf/open/floor/carpet/purple,
 /area/rogue/indoors/town/vault)
+"eLb" = (
+/obj/structure/bars/passage/steel{
+	redstone_id = "minomazeexit"
+	},
+/turf/open/floor/rogue/sandbrick{
+	color = "#c4abff"
+	},
+/area/rogue/under/cave)
 "eLc" = (
 /obj/structure/fluff/railing/border{
 	dir = 8
@@ -14870,6 +14878,12 @@
 "fir" = (
 /turf/closed/wall/mineral/rogue/sandstone,
 /area/rogue/indoors/town/magician/desertacademy)
+"fis" = (
+/obj/structure/bars/passage/steel{
+	redstone_id = "minomazeexit"
+	},
+/turf/open/floor/rogue/sandbrick,
+/area/rogue/under/cave)
 "fiu" = (
 /obj/effect/decal/cleanable/blood{
 	icon_state = "floor5-old"
@@ -21240,6 +21254,16 @@
 	icon_state = "tilewhitebluespecial"
 	},
 /area/rogue/indoors/town/manor/desert)
+"hFX" = (
+/obj/structure/bars/passage/steel{
+	redstone_id = "minomazefight";
+	icon_state = "passage1";
+	density = 0
+	},
+/turf/open/floor/rogue/sandbrick{
+	color = "#c4abff"
+	},
+/area/rogue/under/cave)
 "hGn" = (
 /obj/structure/table/wood/large_table/south_west,
 /turf/open/floor/carpet/purple,
@@ -23115,6 +23139,14 @@
 	},
 /turf/open/floor/rogue/lightpath,
 /area/rogue/outdoors/town/roofs/desert)
+"irb" = (
+/obj/structure/bars/passage/steel{
+	redstone_id = "minomazeleft"
+	},
+/turf/open/floor/rogue/sandbrick{
+	color = "#c4abff"
+	},
+/area/rogue/under/cave)
 "irf" = (
 /obj/structure/fluff/walldeco/church/line{
 	dir = 8
@@ -26786,6 +26818,14 @@
 	icon = 'modular_deserttown/icons/alt/roguefloor.dmi'
 	},
 /area/rogue/under/cave/rhgoblinencampment)
+"jLR" = (
+/obj/structure/bars/passage/steel{
+	redstone_id = "minomazeright"
+	},
+/turf/open/floor/rogue/sandbrick{
+	color = "#c4abff"
+	},
+/area/rogue/under/cave)
 "jLS" = (
 /obj/structure/table/wood/poor,
 /obj/item/rogueweapon/huntingknife/stoneknife,
@@ -31264,6 +31304,12 @@
 /obj/item/roguekey/manor,
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/town/steward)
+"luV" = (
+/obj/structure/bars/passage/steel{
+	redstone_id = "minomazeexit"
+	},
+/turf/open/floor/rogue/lightpath,
+/area/rogue/under/cave)
 "lvg" = (
 /turf/open/floor/rogue/tile{
 	icon = 'modular_deserttown/icons/alt/roguefloor.dmi'
@@ -38223,6 +38269,12 @@
 /obj/effect/decal/cleanable/debris/stony,
 /turf/open/floor/rogue/sandbrick,
 /area/rogue/under/underdarker/undercity)
+"nYn" = (
+/turf/open/floor/rogue/sandbrick{
+	color = "#c4abff"
+	},
+/turf/closed/wall/mineral/rogue/sandstone,
+/area/rogue/under/cave)
 "nYv" = (
 /mob/living/carbon/human/species/orc/npc/footsoldier,
 /turf/open/floor/rogue/naturalstone/sandstone,
@@ -167169,8 +167221,8 @@ lvh
 lvh
 eBo
 eBo
-eBo
-qVZ
+luV
+eLb
 qVZ
 qVZ
 qVZ
@@ -167481,8 +167533,8 @@ lvh
 lvh
 lvh
 lvh
-lvh
-qVZ
+fis
+eLb
 qVZ
 qVZ
 qVZ
@@ -167793,8 +167845,8 @@ lvh
 lvh
 lvh
 lvh
-lvh
-qVZ
+fis
+eLb
 qVZ
 qVZ
 qVZ
@@ -168105,8 +168157,8 @@ lvh
 lvh
 eBo
 eBo
-eBo
-qVZ
+luV
+eLb
 qVZ
 qVZ
 qVZ
@@ -169684,9 +169736,9 @@ rRb
 rRb
 rRb
 rRb
-qVZ
-qVZ
-qVZ
+irb
+irb
+irb
 rRb
 rRb
 bck
@@ -169996,9 +170048,9 @@ rRb
 rRb
 rRb
 rRb
-qVZ
-qVZ
-qVZ
+hFX
+hFX
+hFX
 rRb
 rRb
 bck
@@ -171559,13 +171611,13 @@ qVZ
 qVZ
 qVZ
 qVZ
+hFX
 qVZ
 qVZ
 qVZ
 qVZ
-qVZ
-qVZ
-qVZ
+irb
+jLR
 qVZ
 qVZ
 qVZ
@@ -171871,13 +171923,13 @@ qVZ
 qVZ
 qVZ
 qVZ
+hFX
 qVZ
 qVZ
 qVZ
 qVZ
-qVZ
-qVZ
-qVZ
+irb
+jLR
 qVZ
 qVZ
 qVZ
@@ -173428,9 +173480,9 @@ rRb
 rRb
 rRb
 rRb
-qVZ
-qVZ
-qVZ
+hFX
+hFX
+hFX
 rRb
 rRb
 bck
@@ -173740,9 +173792,9 @@ rRb
 rRb
 rRb
 rRb
-qVZ
-qVZ
-qVZ
+jLR
+jLR
+jLR
 rRb
 rRb
 bck
@@ -280444,12 +280496,12 @@ qVZ
 qVZ
 qVZ
 qVZ
-qVZ
-qVZ
-qVZ
-qVZ
-qVZ
-qVZ
+rRb
+irb
+irb
+irb
+nYn
+nYn
 rRb
 qVZ
 qVZ
@@ -280756,11 +280808,11 @@ qVZ
 qVZ
 qVZ
 qVZ
-qVZ
+rRb
 ksN
 ksN
 ksN
-qVZ
+rRb
 qVZ
 rRb
 rRb
@@ -281068,11 +281120,11 @@ qVZ
 qVZ
 qVZ
 qVZ
-qVZ
+rRb
 sNo
 sNo
 sNo
-qVZ
+rRb
 qVZ
 rRb
 qVZ
@@ -281380,11 +281432,11 @@ qVZ
 qVZ
 qVZ
 qVZ
-qVZ
+rRb
 sNo
 sNo
 sNo
-qVZ
+rRb
 qVZ
 rRb
 qVZ
@@ -299476,11 +299528,11 @@ qVZ
 qVZ
 qVZ
 qVZ
-qVZ
+rRb
 sNo
 sNo
 sNo
-qVZ
+rRb
 qVZ
 rRb
 qVZ
@@ -299788,11 +299840,11 @@ qVZ
 qVZ
 qVZ
 qVZ
-qVZ
+rRb
 sNo
 sNo
 sNo
-qVZ
+rRb
 qVZ
 rRb
 qVZ
@@ -300100,11 +300152,11 @@ qVZ
 qVZ
 qVZ
 qVZ
-qVZ
+rRb
 xap
 xap
 xap
-qVZ
+rRb
 qVZ
 rRb
 qVZ
@@ -300412,12 +300464,12 @@ qVZ
 qVZ
 qVZ
 qVZ
-qVZ
-qVZ
-qVZ
-qVZ
-qVZ
-qVZ
+rRb
+jLR
+jLR
+jLR
+rRb
+rRb
 rRb
 qVZ
 qVZ
