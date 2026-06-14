@@ -138,23 +138,12 @@
 	icon = 'modular_causticcove/icons/mob/taurs/biglegsstanced_markings.dmi'
 	icon_state = "biglegs_stanced"
 
-/datum/sprite_accessory/tail_feature/taur/lupine_venard_1
+/datum/sprite_accessory/tail_feature/taur/lupine_venard
 	name = "Lupine Vernard Body Markings"
 	icon = 'modular_causticcove/icons/mob/taurs/lupine_venard_markings.dmi'
-	icon_state = "chemtaur_markings_1"
-	color_key_name = "Body Markings"
-	can_wag = TRUE
-
-/datum/sprite_accessory/tail_feature/taur/lupine_venard_2
-	name = "Lupine Vernard Upper Highlight and Socks"
-	icon = 'modular_causticcove/icons/mob/taurs/lupine_venard_markings.dmi'
-	icon_state = "chemtaur_markings_2"
-	color_key_name = "Upper Highlights and Socks"
-	can_wag = TRUE
-
-/datum/sprite_accessory/tail_feature/taur/lupine_venard_3
-	name = "Lupine Vernard Other Highlights"
-	icon = 'modular_causticcove/icons/mob/taurs/lupine_venard_markings.dmi'
-	icon_state = "chemtaur_markings_3"
-	color_key_name = "Other Highlights"
+	icon_state = "chemtaur_markings"
+	relevant_layers = null
+	layer = BODY_LAYER
+	color_keys = 3
+	color_key_names = list("Body", "Socks & Stripes", "Highlights")
 	can_wag = TRUE

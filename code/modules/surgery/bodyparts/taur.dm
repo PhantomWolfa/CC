@@ -69,7 +69,7 @@
 
 	var/image/working = image(tail_s)
 	// because these can overlap other organs, we need to layer slightly higher
-	working.layer = -FRONT_MUTATIONS_LAYER
+	working.layer = -BODY_ADJ_LAYER
 	working.pixel_x = offset_x
 
 	. += working

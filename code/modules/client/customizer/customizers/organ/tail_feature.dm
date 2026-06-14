@@ -41,9 +41,7 @@
 		/datum/sprite_accessory/tail_feature/taur/alrauneflower,
 		/datum/sprite_accessory/tail_feature/taur/biglegs,
 		/datum/sprite_accessory/tail_feature/taur/biglegsstanced,
-		/datum/sprite_accessory/tail_feature/taur/lupine_venard_1,
-		/datum/sprite_accessory/tail_feature/taur/lupine_venard_2,
-		/datum/sprite_accessory/tail_feature/taur/lupine_venard_3,
+		/datum/sprite_accessory/tail_feature/taur/lupine_venard,
 		/// CAUSTIC EDIT END
 		)
 
