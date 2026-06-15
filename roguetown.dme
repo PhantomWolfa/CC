@@ -216,6 +216,7 @@
 #include "code\__DEFINES\mobs\simplemob_attack_speed.dm"
 #include "code\__DEFINES\mobs\simplemob_health.dm"
 #include "code\__DEFINES\mobs\simplemob_movement_speed.dm"
+#include "code\modules\spells\roguetown\acolyte\eora\eora_bed.dm"
 
 //Caustic Modular Defines
 #include "modular_causticcove\code\__DEFINES\appearance_changer.dm"
