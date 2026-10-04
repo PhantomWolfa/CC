@@ -231,7 +231,7 @@
 	name = "transmutation equipment"
 	category = "Table"
 	result = list(/obj/item/trans_table_upgrade)
-	reqs = list(/obj/item/ingot/steel = 2, /obj/item/magic/leyline, /obj/item/magic/melded/t4)
+	reqs = list(/obj/item/ingot/iron = 3, /obj/item/magic/leyline, /obj/item/magic/melded/t2)
 	craftdiff = 1
 	verbage_simple = "forge"
 
