@@ -168,9 +168,6 @@ SUBSYSTEM_DEF(nightshift)
 
 	var/int = mind.current.STAINT
 
-	if(HAS_TRAIT(mind.current, TRAIT_GOODSLEEP))
-		dream_dust += floor(BASE_DREAM_DUST)
-
 	if(int < 10)
 		to_chat(src, span_boldwarning("I'm trying my best to learn, even if it is a little difficult..."), MESSAGE_TYPE_INFO)
 	else

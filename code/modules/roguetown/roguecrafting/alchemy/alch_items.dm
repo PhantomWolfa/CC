@@ -256,7 +256,7 @@
 		/obj/structure/flora/roguegrass/herb/artemisia = 6,
 		/obj/structure/flora/roguegrass/herb/rosa = 6,
 		/obj/structure/flora/roguegrass/swampweed = 6,
-		/obj/structure/flora/roguegrass/herb/fyritius = 4 // rare treat
+		/obj/item/reagent_containers/food/snacks/grown/rogue/fyritius = 4 // rare treat
 	)
 
 /obj/item/mutation_reagent/attack_obj(obj/O, mob/living/user)

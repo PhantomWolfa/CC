@@ -39,7 +39,6 @@
 	// inheritance issues with adept's stoplag-based chant selection.
 
 /datum/advclass/wapprentice
-	tempo_capable = FALSE
 
 /datum/advclass/wapprentice/associate
 	name = "Magician's Associate"
