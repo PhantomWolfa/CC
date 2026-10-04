@@ -11,6 +11,7 @@
 	var/splat_type = null
 	/// Color of the splat, applied when splat_type is spawned (after squashing).
 	var/splat_color = null
+	materia = list(/datum/materia_aspect/plant)
 
 /obj/item/reagent_containers/food/snacks/grown/Initialize(mapload)
 	. = ..()
@@ -619,6 +620,7 @@
 	w_class = WEIGHT_CLASS_TINY
 	throw_speed = 1
 	throw_range = 3
+	materia = list(/datum/materia_aspect/plant, /datum/materia_aspect/fire)
 	//CC Edit Begin
 	diet_types = list("Vegetables")
 	diet_change_amount = FOOD_DIETARY_VALUE_POOR - 1.5 //This shit is literally burning your guts lol
