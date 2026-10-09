@@ -258,6 +258,14 @@
 	dish_type = DISH_BREAD | DISH_MEAT
 	//CC Edit End
 
+/obj/item/reagent_containers/food/snacks/rogue/sandwich/ham_smoked
+	tastes = list("smoky ham" = 1,"bread" = 1)
+	name = "roast ham bread"
+	desc = "A piece of bread with a fat slice of smoked ham atop. Said to move mountains with the delicious mixture of flavors alone."
+	icon_state = "bread_ham"
+	rotprocess = null
+	foodtype = GRAIN | MEAT
+
 /*	.................   Bread Buns   ................... */
 /obj/item/reagent_containers/food/snacks/rogue/bun
 	cuisine = CUISINE_NORTH_IMPERIAL|CUISINE_SOUTH_IMPERIAL
