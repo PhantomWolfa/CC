@@ -18,6 +18,8 @@
 #define FOOD_CAT_GENERIC "Generic Cooking"
 #define FOOD_CAT_OVEN "Oven"
 #define FOOD_CAT_PAN "Pan"
+#define FOOD_CAT_BREWS "Tea & Brews"
+#define FOOD_CAT_BLENDS "Blends"
 
 #define COOKSTEP_TOOL "tool"
 #define COOKSTEP_SHARP "sharp"
