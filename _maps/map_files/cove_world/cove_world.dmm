@@ -108816,6 +108816,7 @@
 	pixel_y = 0
 	},
 /obj/item/ration_lootbox,
+/obj/item/ration_lootbox,
 /turf/open/floor/rogue/cobble,
 /area/rogue/under/town/basement)
 "uqn" = (

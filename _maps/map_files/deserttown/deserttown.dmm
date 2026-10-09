@@ -95575,6 +95575,7 @@
 	},
 /obj/structure/table/wood/folding,
 /obj/item/ration_lootbox,
+/obj/item/ration_lootbox,
 /turf/open/floor/rogue/tile/brownbrick{
 	icon = 'modular_deserttown/icons/alt/roguefloor.dmi'
 	},
