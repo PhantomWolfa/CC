@@ -1,4 +1,4 @@
-#define STEW_COOKING_TIME 60 SECONDS
+/*#define STEW_COOKING_TIME 60 SECONDS
 /datum/stew_recipe/bogtea
 	inputs = list(/obj/item/reagent_containers/food/snacks/grown/rogue/swampweeddry)
 	output = /datum/reagent/water/bogtea
@@ -151,3 +151,4 @@
 	cooktime = STEW_COOKING_TIME / 4
 
 #undef STEW_COOKING_TIME
+*/

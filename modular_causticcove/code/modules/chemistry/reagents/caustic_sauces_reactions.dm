@@ -7,12 +7,12 @@
 	results = list(/datum/reagent/water = -1)
 	required_reagents = list(/datum/reagent/water = 1)
 	required_temp = 400*/ //Commenting this one out for now, It seemed to be triggering while people were trying to cook, and perhaps causing issues?
-
+/*
 /datum/stew_recipe/bone_broth
 	inputs = list(/obj/item/natural/bone)
 	output = /datum/reagent/consumable/soup/bone_broth
 	cooktime = STEW_COOKING_TIME //longer than the other drinks
-	req_liquid = /datum/reagent/water //This is technically not needed anymore as 
+	req_liquid = /datum/reagent/water //This is technically not needed anymore as
 
 /datum/stew_recipe/chicken_broth
 	inputs = list(/obj/item/reagent_containers/food/snacks/rogue/meat/mince/poultry)
@@ -25,20 +25,20 @@
 	output = /datum/reagent/consumable/soup/meat_broth
 	cooktime = STEW_COOKING_TIME //longer than the other drinks
 	req_liquid = /datum/reagent/consumable/soup/bone_broth
-
+*/
 /datum/chemical_reaction/mix_tomato_sauce //for fantasy italian cooking
 	name = "mix tomato sauce"
 	id = /datum/reagent/consumable/sauce/tomato_sauce
 	results = list(/datum/reagent/consumable/sauce/tomato_sauce = 1)
 	required_reagents = list(/datum/reagent/consumable/soup/stew/chicken = 1, /datum/reagent/consumable/soup/stew/tomato_soup = 1)
 	required_temp = 350
-
+/*
 /datum/stew_recipe/melted_sugar
 	inputs = list(/obj/item/reagent_containers/food/snacks/sugar)
 	output = /datum/reagent/consumable/soup/melted_sugar
 	cooktime = STEW_COOKING_TIME
 	req_liquid = /datum/reagent/water
-
+*/
 //GRENZELHOFT SAUCES (ALL SAVORY!!!)
 //landsknechtsosse
 /datum/chemical_reaction/beer_to_landsknechtsosse //cooking beer cooks it
@@ -47,7 +47,7 @@
 	results = list(/datum/reagent/consumable/sauce/landsknechtsosse = 1)
 	required_reagents = list(/datum/reagent/consumable/ethanol/beer = 1)
 	required_temp = 350
-
+/*
 //jagersosse
 /datum/stew_recipe/jagersosse
 	inputs = list(/obj/item/alch/taraxacum)
@@ -61,7 +61,7 @@
 	output = /datum/reagent/consumable/sauce/bierrettichsosse
 	cooktime = STEW_COOKING_TIME
 	req_liquid = /datum/reagent/consumable/sauce/landsknechtsosse
-
+*/
 //kartoffelsosse
 /datum/chemical_reaction/pre_kartoffelsosse //2 step process to make harder sauces
 	name = "gravy mixture"
@@ -70,12 +70,12 @@
 	required_reagents = list(/datum/reagent/consumable/oil/tallow = 1, /datum/reagent/consumable/sauce/landsknechtsosse = 1)
 	required_temp = 350
 
-/datum/stew_recipe/kartoffelsosse
+/*/datum/stew_recipe/kartoffelsosse
 	inputs = list(/obj/item/alch/calendula)
 	output = /datum/reagent/consumable/sauce/kartoffelsosse
 	cooktime = STEW_COOKING_TIME
 	req_liquid = /datum/reagent/consumable/sauce/pre_kartoffelsosse
-
+*/
 //grenzernitzelsosse
 /datum/chemical_reaction/pre_grenzernitzelsosse //3 step process to make the best sauces
 	name = "gravy mixture"
@@ -83,7 +83,7 @@
 	results = list(/datum/reagent/consumable/sauce/pre_grenzernitzelsosse = 1)
 	required_reagents = list(/datum/reagent/consumable/oil/tallow = 1, /datum/reagent/consumable/ethanol/cider = 1)
 	required_temp = 350
-
+/*
 /datum/stew_recipe/pre_grenzernitzelsosse_2
 	inputs = list(/obj/item/reagent_containers/powder/flour)
 	output = /datum/reagent/consumable/sauce/pre_grenzernitzelsosse_2
@@ -180,7 +180,7 @@
 	output = /datum/reagent/consumable/sauce/raspberry_confiture
 	cooktime = STEW_COOKING_TIME
 	req_liquid = /datum/reagent/consumable/soup/melted_sugar
-
+*/
 //JAM FERMENTING T2 SWEET SAUCES
 /datum/brewing_recipe/apple_jam
 	name = "Apple Jam"
@@ -522,7 +522,7 @@
 	brewed_amount = 3
 	brew_time = 3 MINUTES
 	sell_value = 50
-
+/*
 //Saiga's Bile (T2 Sour Sauce)
 /datum/stew_recipe/saiga_bile_lime
 	inputs = list(/obj/item/reagent_containers/food/snacks/grown/fruit/lime)
@@ -549,7 +549,7 @@
 	output = /datum/reagent/consumable/sauce/ttekkemali
 	cooktime = STEW_COOKING_TIME
 	req_liquid = /datum/reagent/consumable/sauce/saigazhuss
-
+*/
 //Hammerholdian (High quality sauces, dwarves dont fuck with food, all T3s)
 /datum/brewing_recipe/bronze_bullion
 	name = "Bronze Bullion"
