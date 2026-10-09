@@ -105,11 +105,6 @@
 	output = /datum/reagent/water/gerevine
 	cooktime = STEW_COOKING_TIME / 4
 
-/datum/stew_recipe/schorle
-	inputs = list(/obj/item/reagent_containers/food/snacks/grown/rogue/schorle)
-	output = /datum/reagent/consumable/caffeine/schorle
-	cooktime = STEW_COOKING_TIME / 4
-
 /datum/stew_recipe/baothablend
 	inputs = list(/obj/item/reagent_containers/food/snacks/grown/rogue/baothablend)
 	output = /datum/reagent/water/boathablend
@@ -123,11 +118,6 @@
 /datum/stew_recipe/chai
 	inputs = list(/obj/item/reagent_containers/food/snacks/grown/rogue/chai)
 	output = /datum/reagent/consumable/caffeine/chai
-	cooktime = STEW_COOKING_TIME / 4
-
-/datum/stew_recipe/volfmilk
-	inputs = list(/obj/item/reagent_containers/food/snacks/grown/rogue/volfmilk)
-	output = /datum/reagent/water/volfmilk
 	cooktime = STEW_COOKING_TIME / 4
 
 /datum/stew_recipe/frukkte
