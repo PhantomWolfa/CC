@@ -1,27 +1,10 @@
 //Basically all the sauce recipies + reagent reactions to make sauces and stocks. Chemical reactions, ratios, etc etc.
-//Base Components
-/*
-/datum/chemical_reaction/water_boil_away //boiling water at too high a temp makes it POOF, useful for getting rid of it from other goodies
-	name = "water boil away"
-	id = /datum/reagent/water
-	results = list(/datum/reagent/water = -1)
-	required_reagents = list(/datum/reagent/water = 1)
-	required_temp = 400
-*/ //Commenting this one out for now, It seemed to be triggering while people were trying to cook, and perhaps causing issues?
-
+// --- Base Components ---
 /datum/container_craft/cooking/sauce
 	abstract_type = /datum/container_craft/cooking/sauce
 	//reagent_requirements = list( //This is only here as an example! This is what the base container_craft/cooking has, but can and should be modified for each sauce recipe!
 	//	/datum/reagent/water = STEW_WATER_REQUIRED
 	//)
-
-/datum/container_craft/cooking/sauce/bone_broth
-	name = "Bone Broth"
-	wildcard_requirements = list(/obj/item/natural/bone = 1)
-	created_reagent = /datum/reagent/consumable/soup/bone_broth
-	reagent_requirements = list(
-		/datum/reagent/water = STEW_WATER_REQUIRED
-	)
 
 /datum/container_craft/cooking/sauce/chicken_broth
 	name = "Chicken Broth"
@@ -55,7 +38,8 @@
 	required_reagents = list(/datum/reagent/consumable/soup/stew/chicken = 1, /datum/reagent/consumable/soup/stew/tomato_soup = 1)
 	required_temp = 350
 
-//GRENZELHOFT SAUCES (ALL SAVORY!!!)
+
+// --- GRENZELHOFT SAUCES (ALL SAVORY!!!) ---
 //jagersosse
 /datum/container_craft/cooking/sauce/jagersosse
 	name = "Jagersosse"
@@ -125,92 +109,119 @@
 	required_reagents = list(/datum/reagent/consumable/oil/tallow = 1, /datum/reagent/consumable/ethanol/cider = 1)
 	required_temp = 350
 
-/*
-//ETRUSCAN SAUCES (ALL SPICY!!!)
+
+// --- ETRUSCAN SAUCES (ALL SPICY!!!) ---
 //Tarassaco di Oglio
-/datum/stew_recipe/tarassaco
-	inputs = list(/obj/item/alch/taraxacum)
-	output = /datum/reagent/consumable/sauce/tarassaco
-	cooktime = STEW_COOKING_TIME
-	req_liquid = /datum/reagent/water
+/datum/container_craft/cooking/sauce/tarassaco
+	name = "Tarassaco di Oglio"
+	wildcard_requirements = list(/obj/item/alch/taraxacum = 1)
+	created_reagent = /datum/reagent/consumable/sauce/tarassaco
+	reagent_requirements = list(
+		/datum/reagent/water = STEW_WATER_REQUIRED
+	)
 
 //Zalsa alla Zegezta
-/datum/stew_recipe/zalsa
-	inputs = list(/obj/item/alch/taraxacum)
-	output = /datum/reagent/consumable/sauce/zalsa
-	cooktime = STEW_COOKING_TIME
-	req_liquid = /datum/reagent/consumable/sauce/tomato_sauce
+/datum/container_craft/cooking/sauce/zalsa
+	name = "Zalsa alla Zegezta"
+	wildcard_requirements = list(/obj/item/alch/taraxacum = 1)
+	created_reagent = /datum/reagent/consumable/sauce/zalsa
+	reagent_requirements = list(
+		/datum/reagent/consumable/sauce/tomato_sauce = STEW_WATER_REQUIRED
+	)
 
 //Zalsa alla Zancle
-/datum/stew_recipe/zalsa_zancle
-	inputs = list(/obj/item/reagent_containers/food/snacks/rogue/veg/garlick_clove)
-	output = /datum/reagent/consumable/sauce/zalsa_zancle
-	cooktime = STEW_COOKING_TIME
-	req_liquid = /datum/reagent/consumable/sauce/zalsa
+/datum/container_craft/cooking/sauce/zalsa_zancle
+	name = "Zalsa alla Zancle"
+	wildcard_requirements = list(/obj/item/reagent_containers/food/snacks/rogue/veg/garlick_clove = 1)
+	created_reagent = /datum/reagent/consumable/sauce/zalsa_zancle
+	reagent_requirements = list(
+		/datum/reagent/consumable/sauce/zalsa = STEW_WATER_REQUIRED
+	)
 
 //Zalsa alla Zelinunte
-/datum/stew_recipe/zalsa_zelinunte
-	inputs = list(/obj/item/reagent_containers/food/snacks/rogue/veg/onion_sliced)
-	output = /datum/reagent/consumable/sauce/zalsa_zelinunte
-	cooktime = STEW_COOKING_TIME
-	req_liquid = /datum/reagent/consumable/sauce/zalsa_zancle
+/datum/container_craft/cooking/sauce/zalsa_zelinunte
+	name = "Zalsa alla Zelinunte"
+	wildcard_requirements = list(/obj/item/reagent_containers/food/snacks/rogue/veg/onion_sliced = 1)
+	created_reagent = /datum/reagent/consumable/sauce/zalsa_zelinunte
+	reagent_requirements = list(
+		/datum/reagent/consumable/sauce/zalsa_zancle = STEW_WATER_REQUIRED
+	)
 
-//Otavan (All sweet)
+
+// --- Otavan (All sweet) ---
 //PRESERVES PREPARATION
-/datum/stew_recipe/apple_confiture
-	inputs = list(/obj/item/reagent_containers/food/snacks/grown/apple)
-	output = /datum/reagent/consumable/sauce/apple_confiture
-	cooktime = STEW_COOKING_TIME
-	req_liquid = /datum/reagent/consumable/soup/melted_sugar
+/datum/container_craft/cooking/sauce/apple_confiture
+	name = "Apple Confiture"
+	wildcard_requirements = list(/obj/item/reagent_containers/food/snacks/grown/apple = 1)
+	created_reagent = /datum/reagent/consumable/sauce/apple_confiture
+	reagent_requirements = list(
+		/datum/reagent/consumable/soup/melted_sugar = STEW_WATER_REQUIRED
+	)
 
-/datum/stew_recipe/pear_confiture
-	inputs = list(/obj/item/reagent_containers/food/snacks/grown/fruit/pear)
-	output = /datum/reagent/consumable/sauce/pear_confiture
-	cooktime = STEW_COOKING_TIME
-	req_liquid = /datum/reagent/consumable/soup/melted_sugar
+/datum/container_craft/cooking/sauce/pear_confiture
+	name = "Pear Confiture"
+	wildcard_requirements = list(/obj/item/reagent_containers/food/snacks/grown/fruit/pear = 1)
+	created_reagent = /datum/reagent/consumable/sauce/pear_confiture
+	reagent_requirements = list(
+		/datum/reagent/consumable/soup/melted_sugar = STEW_WATER_REQUIRED
+	)
 
-/datum/stew_recipe/lemon_confiture
-	inputs = list(/obj/item/reagent_containers/food/snacks/grown/fruit/lemon)
-	output = /datum/reagent/consumable/sauce/lemon_confiture
-	cooktime = STEW_COOKING_TIME
-	req_liquid = /datum/reagent/consumable/soup/melted_sugar
+/datum/container_craft/cooking/sauce/lemon_confiture
+	name = "Lemon Confiture"
+	wildcard_requirements = list(/obj/item/reagent_containers/food/snacks/grown/fruit/lemon = 1)
+	created_reagent = /datum/reagent/consumable/sauce/lemon_confiture
+	reagent_requirements = list(
+		/datum/reagent/consumable/soup/melted_sugar = STEW_WATER_REQUIRED
+	)
 
-/datum/stew_recipe/lime_confiture
-	inputs = list(/obj/item/reagent_containers/food/snacks/grown/fruit/lime)
-	output = /datum/reagent/consumable/sauce/lime_confiture
-	cooktime = STEW_COOKING_TIME
-	req_liquid = /datum/reagent/consumable/soup/melted_sugar
+/datum/container_craft/cooking/sauce/lime_confiture
+	name = "Lime Confiture"
+	wildcard_requirements = list(/obj/item/reagent_containers/food/snacks/grown/fruit/lime = 1)
+	created_reagent = /datum/reagent/consumable/sauce/lime_confiture
+	reagent_requirements = list(
+		/datum/reagent/consumable/soup/melted_sugar = STEW_WATER_REQUIRED
+	)
 
-/datum/stew_recipe/tangerine_confiture
-	inputs = list(/obj/item/reagent_containers/food/snacks/grown/fruit/tangerine)
-	output = /datum/reagent/consumable/sauce/tangerine_confiture
-	cooktime = STEW_COOKING_TIME
-	req_liquid = /datum/reagent/consumable/soup/melted_sugar
+/datum/container_craft/cooking/sauce/tangerine_confiture
+	name = "Tangerine Confiture"
+	wildcard_requirements = list(/obj/item/reagent_containers/food/snacks/grown/fruit/tangerine = 1)
+	created_reagent = /datum/reagent/consumable/sauce/tangerine_confiture
+	reagent_requirements = list(
+		/datum/reagent/consumable/soup/melted_sugar = STEW_WATER_REQUIRED
+	)
 
-/datum/stew_recipe/plum_confiture
-	inputs = list(/obj/item/reagent_containers/food/snacks/grown/fruit/plum)
-	output = /datum/reagent/consumable/sauce/plum_confiture
-	cooktime = STEW_COOKING_TIME
-	req_liquid = /datum/reagent/consumable/soup/melted_sugar
+/datum/container_craft/cooking/sauce/plum_confiture
+	name = "Plum Confiture"
+	wildcard_requirements = list(/obj/item/reagent_containers/food/snacks/grown/fruit/plum = 1)
+	created_reagent = /datum/reagent/consumable/sauce/plum_confiture
+	reagent_requirements = list(
+		/datum/reagent/consumable/soup/melted_sugar = STEW_WATER_REQUIRED
+	)
 
-/datum/stew_recipe/strawberry_confiture
-	inputs = list(/obj/item/reagent_containers/food/snacks/grown/fruit/strawberry)
-	output = /datum/reagent/consumable/sauce/strawberry_confiture
-	cooktime = STEW_COOKING_TIME
-	req_liquid = /datum/reagent/consumable/soup/melted_sugar
+/datum/container_craft/cooking/sauce/strawberry_confiture
+	name = "Strawberry Confiture"
+	wildcard_requirements = list(/obj/item/reagent_containers/food/snacks/grown/fruit/strawberry = 1)
+	created_reagent = /datum/reagent/consumable/sauce/strawberry_confiture
+	reagent_requirements = list(
+		/datum/reagent/consumable/soup/melted_sugar = STEW_WATER_REQUIRED
+	)
 
-/datum/stew_recipe/blackberry_confiture
-	inputs = list(/obj/item/reagent_containers/food/snacks/grown/fruit/blackberry)
-	output = /datum/reagent/consumable/sauce/blackberry_confiture
-	cooktime = STEW_COOKING_TIME
-	req_liquid = /datum/reagent/consumable/soup/melted_sugar
+/datum/container_craft/cooking/sauce/blackberry_confiture
+	name = "Blackberry Confiture"
+	wildcard_requirements = list(/obj/item/reagent_containers/food/snacks/grown/fruit/blackberry = 1)
+	created_reagent = /datum/reagent/consumable/sauce/blackberry_confiture
+	reagent_requirements = list(
+		/datum/reagent/consumable/soup/melted_sugar = STEW_WATER_REQUIRED
+	)
 
-/datum/stew_recipe/raspberry_confiture
-	inputs = list(/obj/item/reagent_containers/food/snacks/grown/fruit/raspberry)
-	output = /datum/reagent/consumable/sauce/raspberry_confiture
-	cooktime = STEW_COOKING_TIME
-	req_liquid = /datum/reagent/consumable/soup/melted_sugar
-*/
+/datum/container_craft/cooking/sauce/raspberry_confiture
+	name = "Raspberry Confiture"
+	wildcard_requirements = list(/obj/item/reagent_containers/food/snacks/grown/fruit/raspberry = 1)
+	created_reagent = /datum/reagent/consumable/sauce/raspberry_confiture
+	reagent_requirements = list(
+		/datum/reagent/consumable/soup/melted_sugar = STEW_WATER_REQUIRED
+	)
+
 //JAM FERMENTING T2 SWEET SAUCES
 /datum/brewing_recipe/apple_jam
 	name = "Apple Jam"
@@ -538,8 +549,8 @@
 	brew_time = 3 MINUTES
 	sell_value = 50
 
-//Aavnic (All sour)
 
+// --- Aavnic (All sour) ---
 //Sour cream (T1 Sour Sauce)
 /datum/brewing_recipe/sour_cream
 	name = "Sour Cream"
@@ -552,35 +563,52 @@
 	brewed_amount = 3
 	brew_time = 3 MINUTES
 	sell_value = 50
-/*
-//Saiga's Bile (T2 Sour Sauce)
-/datum/stew_recipe/saiga_bile_lime
-	inputs = list(/obj/item/reagent_containers/food/snacks/grown/fruit/lime)
-	output = /datum/reagent/consumable/sauce/saiga_bile
-	cooktime = STEW_COOKING_TIME
-	req_liquid = /datum/reagent/consumable/milk
 
-/datum/stew_recipe/saiga_bile_lemon
-	inputs = list(/obj/item/reagent_containers/food/snacks/grown/fruit/lemon)
-	output = /datum/reagent/consumable/sauce/saiga_bile
-	cooktime = STEW_COOKING_TIME
-	req_liquid = /datum/reagent/consumable/milk
+/datum/container_craft/cooking/sauce/raspberry_confiture
+	name = "Raspberry Confiture"
+	wildcard_requirements = list(/obj/item/reagent_containers/food/snacks/grown/fruit/raspberry = 1)
+	created_reagent = /datum/reagent/consumable/sauce/raspberry_confiture
+	reagent_requirements = list(
+		/datum/reagent/consumable/soup/melted_sugar = STEW_WATER_REQUIRED
+	)
+
+//Saiga's Bile (T2 Sour Sauce)
+/datum/container_craft/cooking/sauce/saiga_bile_lime
+	name = "Saiga's Bile (Lime)"
+	wildcard_requirements = list(/obj/item/reagent_containers/food/snacks/grown/fruit/lime = 1)
+	created_reagent = /datum/reagent/consumable/sauce/saiga_bile
+	reagent_requirements = list(
+		/datum/reagent/consumable/milk = STEW_WATER_REQUIRED
+	)
+
+/datum/container_craft/cooking/sauce/saiga_bile_lemon
+	name = "Saiga's Bile (Lemon)"
+	wildcard_requirements = list(/obj/item/reagent_containers/food/snacks/grown/fruit/lemon = 1)
+	created_reagent = /datum/reagent/consumable/sauce/saiga_bile
+	reagent_requirements = list(
+		/datum/reagent/consumable/milk = STEW_WATER_REQUIRED
+	)
 
 //Saigazhuss (T3 Sour Sauce)
-/datum/stew_recipe/saigazhuss
-	inputs = list(/obj/item/alch/paris)
-	output = /datum/reagent/consumable/sauce/saigazhuss
-	cooktime = STEW_COOKING_TIME
-	req_liquid = /datum/reagent/consumable/sauce/saiga_bile
+/datum/container_craft/cooking/sauce/saigazhuss
+	name = "Saigazhuss"
+	wildcard_requirements = list(/obj/item/alch/paris = 1)
+	created_reagent = /datum/reagent/consumable/sauce/saigazhuss
+	reagent_requirements = list(
+		/datum/reagent/consumable/sauce/saiga_bile = STEW_WATER_REQUIRED
+	)
 
 //Ttekkemali (T4 Sour Sauce)
-/datum/stew_recipe/ttekkemali
-	inputs = list(/obj/item/reagent_containers/food/snacks/rogue/veg/garlick_clove)
-	output = /datum/reagent/consumable/sauce/ttekkemali
-	cooktime = STEW_COOKING_TIME
-	req_liquid = /datum/reagent/consumable/sauce/saigazhuss
-*/
-//Hammerholdian (High quality sauces, dwarves dont fuck with food, all T3s)
+/datum/container_craft/cooking/sauce/ttekkemali
+	name = "Ttekkemali"
+	wildcard_requirements = list(/obj/item/reagent_containers/food/snacks/rogue/veg/garlick_clove = 1)
+	created_reagent = /datum/reagent/consumable/sauce/ttekkemali
+	reagent_requirements = list(
+		/datum/reagent/consumable/sauce/saigazhuss = STEW_WATER_REQUIRED
+	)
+
+
+// --- Hammerholdian (High quality sauces, dwarves dont fuck with food, all T3s) ---
 /datum/brewing_recipe/bronze_bullion
 	name = "Bronze Bullion"
 	category = "Other"
@@ -628,5 +656,3 @@
 	brewed_amount = 3
 	brew_time = 3 MINUTES
 	sell_value = 50
-
-//#undef STEW_COOKING_TIME
