@@ -1,44 +1,60 @@
 //Basically all the sauce recipies + reagent reactions to make sauces and stocks. Chemical reactions, ratios, etc etc.
-#define STEW_COOKING_TIME 60 SECONDS
-//MISC STUFF
-/*/datum/chemical_reaction/water_boil_away //boiling water at too high a temp makes it POOF, useful for getting rid of it from other goodies
+//Base Components
+/*
+/datum/chemical_reaction/water_boil_away //boiling water at too high a temp makes it POOF, useful for getting rid of it from other goodies
 	name = "water boil away"
 	id = /datum/reagent/water
 	results = list(/datum/reagent/water = -1)
 	required_reagents = list(/datum/reagent/water = 1)
-	required_temp = 400*/ //Commenting this one out for now, It seemed to be triggering while people were trying to cook, and perhaps causing issues?
-/*
-/datum/stew_recipe/bone_broth
-	inputs = list(/obj/item/natural/bone)
-	output = /datum/reagent/consumable/soup/bone_broth
-	cooktime = STEW_COOKING_TIME //longer than the other drinks
-	req_liquid = /datum/reagent/water //This is technically not needed anymore as
+	required_temp = 400
+*/ //Commenting this one out for now, It seemed to be triggering while people were trying to cook, and perhaps causing issues?
 
-/datum/stew_recipe/chicken_broth
-	inputs = list(/obj/item/reagent_containers/food/snacks/rogue/meat/mince/poultry)
-	output = /datum/reagent/consumable/soup/chicken_broth
-	cooktime = STEW_COOKING_TIME //longer than the other drinks
-	req_liquid = /datum/reagent/consumable/soup/bone_broth
+/datum/container_craft/cooking/sauce
+	abstract_type = /datum/container_craft/cooking/sauce
+	//reagent_requirements = list( //This is only here as an example! This is what the base container_craft/cooking has, but can and should be modified for each sauce recipe!
+	//	/datum/reagent/water = STEW_WATER_REQUIRED
+	//)
 
-/datum/stew_recipe/meat_broth
-	inputs = list(/obj/item/reagent_containers/food/snacks/rogue/meat/steak)
-	output = /datum/reagent/consumable/soup/meat_broth
-	cooktime = STEW_COOKING_TIME //longer than the other drinks
-	req_liquid = /datum/reagent/consumable/soup/bone_broth
-*/
+/datum/container_craft/cooking/sauce/bone_broth
+	name = "Bone Broth"
+	wildcard_requirements = list(/obj/item/natural/bone = 1)
+	created_reagent = /datum/reagent/consumable/soup/bone_broth
+	reagent_requirements = list(
+		/datum/reagent/water = STEW_WATER_REQUIRED
+	)
+
+/datum/container_craft/cooking/sauce/chicken_broth
+	name = "Chicken Broth"
+	wildcard_requirements = list(/obj/item/reagent_containers/food/snacks/rogue/meat/mince/poultry = 1)
+	created_reagent = /datum/reagent/consumable/soup/chicken_broth
+	reagent_requirements = list(
+		/datum/reagent/consumable/soup/bone_broth = STEW_WATER_REQUIRED
+	)
+
+/datum/container_craft/cooking/sauce/meat_broth
+	name = "Meat Broth"
+	wildcard_requirements = list(/obj/item/reagent_containers/food/snacks/rogue/meat/steak = 1)
+	created_reagent = /datum/reagent/consumable/soup/meat_broth
+	reagent_requirements = list(
+		/datum/reagent/consumable/soup/bone_broth = STEW_WATER_REQUIRED
+	)
+
+/datum/container_craft/cooking/sauce/melted_sugar
+	name = "Melted Sugar"
+	wildcard_requirements = list(/obj/item/reagent_containers/food/snacks/sugar = 1)
+	created_reagent = /datum/reagent/consumable/soup/melted_sugar
+	water_conversion = 6 //This will multiply the reagent requirements (5 water) by 6 to give 30 units of melted sugar output
+	reagent_requirements = list(
+		/datum/reagent/water = 5
+	)
+
 /datum/chemical_reaction/mix_tomato_sauce //for fantasy italian cooking
 	name = "mix tomato sauce"
 	id = /datum/reagent/consumable/sauce/tomato_sauce
 	results = list(/datum/reagent/consumable/sauce/tomato_sauce = 1)
 	required_reagents = list(/datum/reagent/consumable/soup/stew/chicken = 1, /datum/reagent/consumable/soup/stew/tomato_soup = 1)
 	required_temp = 350
-/*
-/datum/stew_recipe/melted_sugar
-	inputs = list(/obj/item/reagent_containers/food/snacks/sugar)
-	output = /datum/reagent/consumable/soup/melted_sugar
-	cooktime = STEW_COOKING_TIME
-	req_liquid = /datum/reagent/water
-*/
+
 //GRENZELHOFT SAUCES (ALL SAVORY!!!)
 //landsknechtsosse
 /datum/chemical_reaction/beer_to_landsknechtsosse //cooking beer cooks it
@@ -599,4 +615,4 @@
 	brew_time = 3 MINUTES
 	sell_value = 50
 
-#undef STEW_COOKING_TIME
+//#undef STEW_COOKING_TIME
