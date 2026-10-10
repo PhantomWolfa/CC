@@ -43,7 +43,7 @@
 //jagersosse
 /datum/container_craft/cooking/sauce/jagersosse
 	name = "Jagersosse"
-	wildcard_requirements = list(/obj/item/alch/taraxacum = 1)
+	wildcard_requirements = list(/obj/item/alch/calendula = 1)
 	created_reagent = /datum/reagent/consumable/sauce/jagersosse
 	reagent_requirements = list(
 		/datum/reagent/consumable/oil/tallow = STEW_WATER_REQUIRED
@@ -117,7 +117,7 @@
 	wildcard_requirements = list(/obj/item/alch/taraxacum = 1)
 	created_reagent = /datum/reagent/consumable/sauce/tarassaco
 	reagent_requirements = list(
-		/datum/reagent/water = STEW_WATER_REQUIRED
+		/datum/reagent/consumable/oil/tallow = STEW_WATER_REQUIRED
 	)
 
 //Zalsa alla Zegezta
