@@ -56,6 +56,51 @@
 	required_temp = 350
 
 //GRENZELHOFT SAUCES (ALL SAVORY!!!)
+//jagersosse
+/datum/container_craft/cooking/sauce/jagersosse
+	name = "Jagersosse"
+	wildcard_requirements = list(/obj/item/alch/taraxacum = 1)
+	created_reagent = /datum/reagent/consumable/sauce/jagersosse
+	reagent_requirements = list(
+		/datum/reagent/consumable/oil/tallow = STEW_WATER_REQUIRED
+	)
+
+//bierrettichsosse
+/datum/container_craft/cooking/sauce/bierrettichsosse
+	name = "Bierrettichsosse"
+	wildcard_requirements = list(/obj/item/alch/calendula = 1)
+	created_reagent = /datum/reagent/consumable/sauce/bierrettichsosse
+	reagent_requirements = list(
+		/datum/reagent/consumable/sauce/landsknechtsosse = STEW_WATER_REQUIRED
+	)
+
+//kartoffelsosse - finished
+/datum/container_craft/cooking/sauce/kartoffelsosse
+	name = "Kartoffelsosse"
+	wildcard_requirements = list(/obj/item/alch/calendula = 1)
+	created_reagent = /datum/reagent/consumable/sauce/kartoffelsosse
+	reagent_requirements = list(
+		/datum/reagent/consumable/sauce/pre_kartoffelsosse = STEW_WATER_REQUIRED
+	)
+
+//grenzernitzelsosse
+/datum/container_craft/cooking/sauce/pre_grenzernitzelsosse_2
+	name = "thick gravy mixture (grenzernitzelsosse)"
+	wildcard_requirements = list(/obj/item/reagent_containers/powder/flour = 1)
+	created_reagent = /datum/reagent/consumable/sauce/pre_grenzernitzelsosse_2
+	reagent_requirements = list(
+		/datum/reagent/consumable/sauce/pre_grenzernitzelsosse = STEW_WATER_REQUIRED
+	)
+
+/datum/container_craft/cooking/sauce/grenzernitzelsosse
+	name = "Grenzernitzelsosse"
+	wildcard_requirements = list(/obj/item/alch/calendula = 1)
+	created_reagent = /datum/reagent/consumable/sauce/grenzernitzelsosse
+	reagent_requirements = list(
+		/datum/reagent/consumable/sauce/pre_grenzernitzelsosse_2 = STEW_WATER_REQUIRED
+	)
+
+//Grenzel Reactions
 //landsknechtsosse
 /datum/chemical_reaction/beer_to_landsknechtsosse //cooking beer cooks it
 	name = "beer to landsknechtsosse"
@@ -63,55 +108,24 @@
 	results = list(/datum/reagent/consumable/sauce/landsknechtsosse = 1)
 	required_reagents = list(/datum/reagent/consumable/ethanol/beer = 1)
 	required_temp = 350
-/*
-//jagersosse
-/datum/stew_recipe/jagersosse
-	inputs = list(/obj/item/alch/taraxacum)
-	output = /datum/reagent/consumable/sauce/jagersosse
-	cooktime = STEW_COOKING_TIME
-	req_liquid = /datum/reagent/consumable/oil/tallow
 
-//bierrettichsosse
-/datum/stew_recipe/bierrettichsosse
-	inputs = list(/obj/item/alch/calendula)
-	output = /datum/reagent/consumable/sauce/bierrettichsosse
-	cooktime = STEW_COOKING_TIME
-	req_liquid = /datum/reagent/consumable/sauce/landsknechtsosse
-*/
 //kartoffelsosse
 /datum/chemical_reaction/pre_kartoffelsosse //2 step process to make harder sauces
-	name = "gravy mixture"
+	name = "gravy mixture (kartoffelsosse)"
 	id = /datum/reagent/consumable/sauce/pre_kartoffelsosse
 	results = list(/datum/reagent/consumable/sauce/pre_kartoffelsosse = 1)
 	required_reagents = list(/datum/reagent/consumable/oil/tallow = 1, /datum/reagent/consumable/sauce/landsknechtsosse = 1)
 	required_temp = 350
 
-/*/datum/stew_recipe/kartoffelsosse
-	inputs = list(/obj/item/alch/calendula)
-	output = /datum/reagent/consumable/sauce/kartoffelsosse
-	cooktime = STEW_COOKING_TIME
-	req_liquid = /datum/reagent/consumable/sauce/pre_kartoffelsosse
-*/
 //grenzernitzelsosse
 /datum/chemical_reaction/pre_grenzernitzelsosse //3 step process to make the best sauces
-	name = "gravy mixture"
+	name = "gravy mixture (grenzernitzelsosse)"
 	id = /datum/reagent/consumable/sauce/pre_grenzernitzelsosse
 	results = list(/datum/reagent/consumable/sauce/pre_grenzernitzelsosse = 1)
 	required_reagents = list(/datum/reagent/consumable/oil/tallow = 1, /datum/reagent/consumable/ethanol/cider = 1)
 	required_temp = 350
+
 /*
-/datum/stew_recipe/pre_grenzernitzelsosse_2
-	inputs = list(/obj/item/reagent_containers/powder/flour)
-	output = /datum/reagent/consumable/sauce/pre_grenzernitzelsosse_2
-	cooktime = STEW_COOKING_TIME
-	req_liquid = /datum/reagent/consumable/sauce/pre_grenzernitzelsosse
-
-/datum/stew_recipe/grenzernitzelsosse
-	inputs = list(/obj/item/alch/calendula)
-	output = /datum/reagent/consumable/sauce/grenzernitzelsosse
-	cooktime = STEW_COOKING_TIME
-	req_liquid = /datum/reagent/consumable/sauce/pre_grenzernitzelsosse_2
-
 //ETRUSCAN SAUCES (ALL SPICY!!!)
 //Tarassaco di Oglio
 /datum/stew_recipe/tarassaco
